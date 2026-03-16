@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Unit Calculation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <a href="../Home/home.html" class="home-button">
+            <i class="fas fa-home"></i> <span id="detailsHomeButtonText">முகப்புக்குத் திரும்பு</span>
+        </a>
+        <h1 id="detailsTitle">அலகு கணக்கீடு விவரங்கள்</h1>
+    </div>
+</header>
+
+<main>
+    <section class="table-section" id="tariffTables"></section>
+
+    <section class="info-section">
+        <p><b>ஜூலை 2024 இல் இலங்கை தனது மின்சாரக் கட்டணங்களில் குறிப்பிடத்தக்க மாற்றங்களைச் செயல்படுத்தியுள்ளது.
+            இலங்கையின் பொதுப் பயன்பாடுகள் ஆணைக்குழு (PUCSL) பல்வேறு நுகர்வோர் பிரிவுகளில் மின்சார கட்டணங்களில் குறிப்பிடத்தக்க குறைப்புக்கு ஒப்புதல் அளித்துள்ளது.
+            உள்நாட்டுப் பயனர்களுக்கு, வெவ்வேறு நுகர்வு அடைப்புக்களில் குறிப்பிட்ட குறைப்புகளுடன், சுமார் 27% கட்டணம் குறைக்கப்பட்டுள்ளது.
+            உதாரணமாக, 0-30 யூனிட் அடைப்புக்குறிக்கான விகிதம் ரூ. இருந்து குறைக்கப்பட்டது. 8 முதல் ரூ. 6, மற்றும் 31-60 யூனிட் அடைப்புக்குறி ரூ. 20 முதல் ரூ. 9.
+            கூடுதலாக, மத வழிபாட்டுத் தலங்கள் 30% குறைக்கப்பட்டன, அதே நேரத்தில் ஹோட்டல்கள் மற்றும் தொழிற்சாலைகள் அவற்றின் மின்சாரக் கட்டணத்தில் 25% குறைவால் பயனடைந்தன.
+            நுகர்வோர் மீதான நிதிச்சுமையை எளிதாக்குவதற்கும் பல்வேறு துறைகளுக்கு ஆதரவளிப்பதற்கும் அரசாங்கத்தின் பரந்த முயற்சிகளின் ஒரு பகுதியாக இந்த சரிசெய்தல் உள்ளது.
+            எரிசக்தி துறையின் நிதிநிலையை உறுதிப்படுத்தும் நோக்கில், ஆண்டின் தொடக்கத்தில் முந்தைய அதிகரிப்புகளைத் தொடர்ந்து.</b>
+        </p>
+        <p><b id="tariffVersionNote">கணக்கீட்டில் பயன்படுத்தப்படும் கட்டண வடிவம்: பயன்பாட்டின் தற்போதைய கட்டண அட்டவணை</b></p>
+    </section>
+</main>
+
+<section class="references-section">
+  <div class="reference-card">
+      <h2>உஷாதுணை 1</h2>
+      <p>இந்த விரிவான ஆதாரங்களில் இருந்து மின்சார கட்டணங்கள் மற்றும் கணக்கீடுகள் பற்றி மேலும் அறிக.</p>
+      <a href="https://www.pucsl.gov.lk/electricity/tariff/electricity-tariff-and-charges/" target="_blank" class="reference-link">இணையதளத்தைப் பார்வையிடவும்</a>
+  </div>
+  <div class="reference-card">
+      <h2>உஷாதுணை 2</h2>
+      <p>எரிசக்தி விதிமுறைகள் மற்றும் கொள்கைகள் பற்றிய விரிவான தகவல் மற்றும் புதுப்பிப்புகளை இங்கே காணலாம்.</p>
+      <a href="https://cebcare.ceb.lk/Incognito/BillCalculator" target="_blank" class="reference-link">இணையதளத்தைப் பார்வையிடவும்</a>
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 எளிதான மின்சார பில் கால்குலேட்டர் | திறமையான ஆற்றல் மேலாண்மைக்காக வடிவமைக்கப்பட்டுள்ளது</p>
+</footer>
+
+<script src="../../shared/js/electricity-bill-app.js"></script>
+<script>
+    ElectricityBillApp.initTariffDetailsPage({
+        language: 'ta'
+    });
+</script>
+</body>
+</html>

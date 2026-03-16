@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Consumption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="calculatorTitle">Electricity Consumption Calculator</h2>
+        <label for="previousMeter" id="previousMeterLabel">Previous Meter Reader (kWh):</label>
+        <input type="number" id="previousMeter" min="0" max="1000000" step="any" placeholder="Enter previous meter reading">
+        <label for="currentMeter" id="currentMeterLabel">Current Meter Reader (kWh):</label>
+        <input type="number" id="currentMeter" min="0" max="1000000" step="any" placeholder="Enter current meter reading">
+        <button id="calculateConsumptionBtn" onclick="calculateConsumption()">Calculate Consumption</button>
+        <p id="consumptionResult"><span id="consumptionLabel">Consumption:</span> <span id="consumption"></span> kWh</p>
+        <p id="errorMessage" style="color: red; font-size:13px;"></p>
+        <button id="calculateBillBtn" onclick="redirectToBillPage()" disabled>Calculate the Bill</button>
+        <button id="backBtn" onclick="goBack()">Back to Home Page</button>
+    </div>
+
+    <footer>
+        &copy; 2024 Easy Electricity Bill Calculator | Designed for efficient energy management
+    </footer>
+
+    <script src="../../shared/js/electricity-bill-app.js"></script>
+    <script>
+        ElectricityBillApp.initCalculatorPage({
+            language: 'en',
+            homeUrl: '../Home/home.html',
+            billUrl: 'bill.html'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Unit Calculation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <a href="../Home/home.html" class="home-button">
+            <i class="fas fa-home"></i> <span id="detailsHomeButtonText">ආපසු නිවසට</span>
+        </a>
+        <h1 id="detailsTitle">ඒකක ගණනය කිරීමේ විස්තර</h1>
+    </div>
+</header>
+
+<main>
+    <section class="table-section" id="tariffTables"></section>
+
+    <section class="info-section">
+        <p><b>ශ්‍රී ලංකාව මෑතකදී 2024 ජූලි වන විට සිය විදුලි ගාස්තු සඳහා සැලකිය යුතු වෙනස්කම් ක්‍රියාත්මක කර ඇත.
+            ශ්‍රී ලංකා මහජන උපයෝගිතා කොමිෂන් සභාව (PUCSL) විවිධ පාරිභෝගික කාණ්ඩ හරහා විදුලි ගාස්තුවල කැපී පෙනෙන අඩු කිරීමක් අනුමත කළේය.
+            ගෘහස්ත භාවිතා කරන්නන් සඳහා, විවිධ පරිභෝජන වරහන් හරහා නිශ්චිත අඩු කිරීම් සහිතව, ගාස්තු දළ වශයෙන් 27% කින් අඩු කර ඇත.
+            උදාහරණයක් ලෙස, ඒකක 0-30 වරහන සඳහා ගාස්තුව රු. 8 සිට රු. 6, සහ 31-60 ඒකක වරහන රු. 20 සිට රු. 9.
+            මීට අමතරව, ආගමික සිද්ධස්ථාන 30% ක අඩුවීමක් අත්විඳින අතර හෝටල් සහ කර්මාන්ත 25% ක විදුලි ගාස්තු අඩු වීමෙන් ප්‍රතිලාභ ලැබීය.
+            මෙම ගැලපීම පාරිභෝගිකයින් මත පවතින මූල්‍ය බර ලිහිල් කිරීමට සහ විවිධ ක්ෂේත්‍ර සඳහා ආධාර කිරීමට රජය විසින් දරන පුළුල් ප්‍රයත්නයේ කොටසකි.
+            බලශක්ති අංශයේ මූල්‍ය ස්ථාවර කිරීම ඉලක්ක කර ගනිමින් වසර මුලදී පෙර පැවති වැඩිවීම් පහත දැක්වේ.</b>
+        </p>
+        <p><b id="tariffVersionNote">ගණනය සඳහා භාවිතා වන ගාස්තු පැතිකඩ: යෙදුමේ වත්මන් ගාස්තු වගුව</b></p>
+    </section>
+</main>
+
+<section class="references-section">
+  <div class="reference-card">
+      <h2>යොමුව 1</h2>
+      <p>මෙම විස්තීරණ මූලාශ්‍රයෙන් විදුලි ගාස්තු සහ ගණනය කිරීම් ගැන තව දැනගන්න.</p>
+      <a href="https://www.pucsl.gov.lk/electricity/tariff/electricity-tariff-and-charges/" target="_blank" class="reference-link">Visit Website</a>
+  </div>
+  <div class="reference-card">
+      <h2>යොමුව 2</h2>
+      <p>බලශක්ති රෙගුලාසි සහ ප්‍රතිපත්ති පිළිබඳ සවිස්තරාත්මක තොරතුරු සහ යාවත්කාලීන කිරීම් මෙතැනින් සොයා ගන්න.</p>
+      <a href="https://cebcare.ceb.lk/Incognito/BillCalculator" target="_blank" class="reference-link">Visit Website</a>
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 පහසු විදුලි බිල්පත් කැල්කියුලේටරය | කාර්යක්ෂම බලශක්ති කළමනාකරණය සඳහා නිර්මාණය කර ඇත</p>
+</footer>
+
+<script src="../../shared/js/electricity-bill-app.js"></script>
+<script>
+    ElectricityBillApp.initTariffDetailsPage({
+        language: 'si'
+    });
+</script>
+</body>
+</html>

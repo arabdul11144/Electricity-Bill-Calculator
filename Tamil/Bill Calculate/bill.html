@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Bill</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="billTitle">மின்சார பில் கால்குலேட்டர்</h2>
+        <p id="consumptionDetails"></p>
+        <div id="calculationSteps"></div>
+        <p id="totalBill"></p>
+        <p id="tariffVersion"></p>
+        <button id="backBtn" onclick="goBack()">முகப்புப் பக்கத்துக்குத் திரும்பு</button>
+        <button id="backBtn1" onclick="goTip()">மின்சார நுகர்வு குறைப்பது எப்படி</button>
+    </div>
+
+    <footer>
+        &copy; 2024 எளிதான மின்சார பில் கால்குலேட்டர் | திறமையான ஆற்றல் மேலாண்மைக்காக வடிவமைக்கப்பட்டுள்ளது
+    </footer>
+
+    <script src="../../shared/js/electricity-bill-app.js"></script>
+    <script>
+        ElectricityBillApp.initBillPage({
+            language: 'ta',
+            backUrl: 'index.html',
+            tipsUrl: '../Tips/Tips.html'
+        });
+    </script>
+</body>
+</html>

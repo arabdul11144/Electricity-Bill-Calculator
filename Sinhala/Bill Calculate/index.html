@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Consumption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="calculatorTitle">විදුලි පරිභෝජන කැල්ක්යුලේටරය</h2>
+        <label for="previousMeter" id="previousMeterLabel">පෙර මනු කියවන්නා  (kWh):</label>
+        <input type="number" id="previousMeter" min="0" max="1000000" step="any" placeholder="පෙර මීටර කියවීම ඇතුළත් කරන්න">
+        <label for="currentMeter" id="currentMeterLabel">වත්මන් මනු කියවන්නා  (kWh):</label>
+        <input type="number" id="currentMeter" min="0" max="1000000" step="any" placeholder="වත්මන් මීටර කියවීම ඇතුළත් කරන්න">
+        <button id="calculateConsumptionBtn" onclick="calculateConsumption()">පරිභෝජනය ගණනය කරන්න</button>
+        <p id="consumptionResult"><span id="consumptionLabel">පරිභෝජනය:</span> <span id="consumption"></span> kWh</p>
+        <p id="errorMessage" style="color: red; font-size:13px;"></p>
+        <button id="calculateBillBtn" onclick="redirectToBillPage()" disabled>බිල්පත ගණනය කරන්න</button>
+        <button id="backBtn" onclick="goBack()">මුල් පිටුවට ආපසු යන්න</button>
+    </div>
+
+    <footer>
+        &copy; 2024 පහසු විදුලි බිල්පත් කැල්කියුලේටරය | කාර්යක්ෂම බලශක්ති කළමනාකරණය සඳහා නිර්මාණය කර ඇත
+    </footer>
+
+    <script src="../../shared/js/electricity-bill-app.js"></script>
+    <script>
+        ElectricityBillApp.initCalculatorPage({
+            language: 'si',
+            homeUrl: '../Home/home.html',
+            billUrl: 'bill.html'
+        });
+    </script>
+</body>
+</html>

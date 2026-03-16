@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Bill</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="billTitle">Electricity Bill Calculator</h2>
+        <p id="consumptionDetails"></p>
+        <div id="calculationSteps"></div>
+        <p id="totalBill"></p>
+        <p id="tariffVersion"></p>
+        <button id="backBtn" onclick="goBack()">Back to Home Page</button>
+        <button id="backBtn1" onclick="goTip()">How To Reduce the Electricity Consumption</button>
+    </div>
+
+    <footer>
+        &copy; 2024 Easy Electricity Bill Calculator | Designed for efficient energy management
+    </footer>
+
+    <script src="../../shared/js/electricity-bill-app.js"></script>
+    <script>
+        ElectricityBillApp.initBillPage({
+            language: 'en',
+            backUrl: 'index.html',
+            tipsUrl: '../Tips/Tips.html'
+        });
+    </script>
+</body>
+</html>

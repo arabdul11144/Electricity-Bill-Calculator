@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Bill</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="billTitle">විදුලි බිල්පත් කැල්ක්යුලේටරය</h2>
+        <p id="consumptionDetails"></p>
+        <div id="calculationSteps"></div>
+        <p id="totalBill"></p>
+        <p id="tariffVersion"></p>
+        <button id="backBtn" onclick="goBack()">මුල් පිටුවට ආපසු යන්න</button>
+        <button id="backBtn1" onclick="goTip()">විදුලි පරිභෝජනය අඩු කරන්නේ කෙසේද?</button>
+    </div>
+
+    <footer>
+        &copy; 2024 පහසු විදුලි බිල්පත් කැල්කියුලේටරය | කාර්යක්ෂම බලශක්ති කළමනාකරණය සඳහා නිර්මාණය කර ඇත
+    </footer>
+
+    <script src="../../shared/js/electricity-bill-app.js"></script>
+    <script>
+        ElectricityBillApp.initBillPage({
+            language: 'si',
+            backUrl: 'index.html',
+            tipsUrl: '../Tips/Tips.html'
+        });
+    </script>
+</body>
+</html>
